@@ -1,4 +1,4 @@
-LOCAL_PATH := device/ulefone/metal
+LOCAL_PATH := device/elephone/p8000
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -7,7 +7,7 @@ PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Recovery allowed devices
-TARGET_OTA_ASSERT_DEVICE := metal
+TARGET_OTA_ASSERT_DEVICE := p8000,k06te,k05te,P8000
 
 PRODUCT_PACKAGES += \
     libstlport
@@ -71,4 +71,4 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product, vendor/mad/config/common.mk)
 
 # Vendor
-$(call inherit-product, vendor/ulefone/metal/metal-vendor.mk)
+$(call inherit-product, vendor/elephone/p8000/p8000-vendor.mk)

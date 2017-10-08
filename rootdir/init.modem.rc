@@ -80,11 +80,12 @@ service ril-daemon-mtkmd2 /system/bin/mtkrildmd2
     socket rild-vsim-md2 stream 660 root radio
     socket rild-mal-md2 stream 660 radio system
     socket rild-mal-at-md2 stream 660 radio system
+	
     user root
     group radio cache inet misc audio sdcard_r sdcard_rw log system
     disabled
     oneshot
-
+	
 #
 #  Modem related services (Begin)
 #
